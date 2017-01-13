@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Let Us Check You</title>
+    <script language="javascript" src="Validate.js"></script>
+</head>
+<body background="bg.jpg" style="background-attachment : fixed">
+<br/><br/>
+<font size="10" face="georgia" color="white">
+<center> Questionnaire </center>
+</font>
+<hr/>
+<br/><br/>
+<form action="ProccessData" name="getdetails">
+<font size="6" face="mono-cursive" color="white">
+	<pre>
+	1.  Your residential place is
+	<font size="5">
+		<input type="radio" name="place" id="q1" value="urban" onclick="count('q1')">Urban<small>(city)</small>	<input type="radio" name="place" id="q1" value="rural" onclick="count('q1')">Rural<small>(village)</small>
+	</font></pre>
+	<pre>
+	2.  Do you get regular air pollution warning at your living place?
+	<font size="5">
+		<input type="radio" name="polluted" id="q2" value="yes" onclick="count('q2')">Yes	<input type="radio" name="polluted" id="q2" value="no" onclick="count('q2')">No
+	</font></pre>
+        <pre>
+	3.  Do you drive more than 40,000km per year?
+	<font size="5">
+		<input type="radio" name="drive" id="q3" value="yes" onclick="count('q3')">Yes	<input type="radio" name="drive" id="q3" value="no" onclick="count('q3')">No
+	</font></pre>
+        <pre>
+	4.  Your sleeping hours per day
+	<font size="5">
+		<input type="radio" name="sleep" id="q4" value="low" onclick="count('q4')">Upto 5hrs  <input type="radio" name="sleep" id="q4" value="normal" onclick="count('q4')">6 to 8hrs   <input type="radio" name="sleep" id="q4" value="high" onclick="count('q4')">more than 8hrs
+	</font></pre>
+	<pre>
+	5.  Your job at work place is mainly
+	<font size="5">
+		<input type="radio" name="job"  value="mental" id="q5" onclick="count('q5')">Mentally done	<input type="radio" name="job"  id="q5" value="physical" onclick="count('q5')">Physically done
+	</font></pre>
+        <pre>
+	6.  Your job hours
+	<font size="5">
+		<input type="radio" name="jobhrs"  value="normal" id="q6" onclick="count('q6')">upto 8hrs	<input type="radio" name="jobhrs"  value="high" id="q6" onclick="count('q6')">More than 9hrs      <input type="radio" name="jobhrs"  value="null" id="q6" onclick="count('q6')">I don't work
+	</font></pre>
+	<pre>
+	7.  Are you habitual to smoke
+	<font size="5">
+		<input type="radio" name="smoke"  value="yes" id="q7" onclick="count('q7')">Yes	<input type="radio" name="smoke"  value="no" id="q7" onclick="count('q7')">No
+	</font></pre>
+	<pre>
+	8.  Are you habitual to drink
+	<font size="5">
+		<input type="radio" name="drink"  value="yes" id="q8" onclick="count('q8')">Yes	<input type="radio" name="drink"  value="no" id="q8" onclick="count('q8')">No
+	</font></pre>
+	<pre>
+	9.  Do you skip your breakfast
+	<font size="5">
+		<input type="radio" name="fast"  value="yes" id="q9" onclick="count('q9')">Yes		<input type="radio" name="fast"  value="no" id="q9" onclick="count('q9')">No
+	</font></pre>
+        <pre>
+	10.  Your food habit is
+	<font size="5">
+		<input type="radio" name="diet"  value="healthy" id="q10" onclick="count('q10')">Healthy diet	<input type="radio" name="diet"  value="unhealthy" id="q10" onclick="count('q10')">Poor diet
+	</font></pre>
+	<pre>
+	11.  The stress level 
+	<font size="5">
+		<input type="radio" name="stress"  value="high" id="q11" onclick="count('q11')">High	<input type="radio" name="stress"  value="low" id="q11" onclick="count('q11')">Low	<input type="radio" name="stress" id="q6" value="medium" id="q11" onclick="count('q11')">Moderate
+	</font></pre>
+	<pre>
+	12.  Are you diabetic ?
+	<font size="5">
+		<input type="radio" name="diabetes"  value="yes" id="q12" onclick="count('q12')">Yes		<input type="radio" name="diabetes"  value="no" id="q12" onclick="count('q12')">No          <input type="radio" name="diabetes"  value="no" id="q12" onclick="count('q12')">I don't know
+	</font></pre>
+	<pre>
+	13.  Do you have a high BP ?
+	<font size="5">
+		<input type="radio" name="hbp"  value="yes" id="q13" onclick="count('q13')">Yes		<input type="radio" name="hbp" id="q13" onclick="count('q13')" value="no">No           <input type="radio" name="hbp" id="q13" onclick="count('q13')" value="no">I don't know
+	</font></pre>
+	<pre>
+	14.  Do you have a low BP ?
+	<font size="5">
+		<input type="radio" name="lbp"  value="yes" id="q14" onclick="count('q14')">Yes		<input type="radio" name="lbp"  value="no" id="q14" onclick="count('q14')">No           <input type="radio" name="lbp"  value="no" id="q14" onclick="count('q14')">I don't know
+	</font></pre>
+	<pre>
+	15.  Are you Obessed ?
+	<font size="5">
+		<input type="radio" name="obesity" id="q15" onclick="count('q15')" value="yes">Yes		<input type="radio" name="obesity" id="q15" onclick="count('q15')" value="no">No
+	</font></pre>
+        <hr/>
+        <center><input type="submit" value="Submit" onclick="return checkCompletion()"/><center>
+</font>
+
+</body>
+</html>
